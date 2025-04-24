@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Food Order Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 align="center">
+            PraRozFOOD
+        </h1>
+    </header>
+    <hr>
+
+    <h1>Food Order Form</h1>
+
+    <form action="/submit-order" method="post">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="food">Select Food Item:</label><br>
+        <select id="food" name="food" required>
+            <option value="">--Choose an item--</option>
+            <option value="pizza">Pizza - $10</option>
+            <option value="burger">Burger - $7</option>
+            <option value="pasta">Pasta - $8</option>
+            <option value="salad">Salad - $5</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+
+        <label for="notes">Special Instructions:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Place Order">
+
+    </form>
+
+</body>
+
+</html>
