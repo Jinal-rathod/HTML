@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+
+<body>
+    <caption>
+        <h1 align="center">Registration Form</h1>
+    </caption>
+    <hr>
+    <br>
+    <form>
+        <label for="name">Name :</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <br><br>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" requireds>
+        <br><br>
+        <label for="hobby">Hobby :</label>
+        <input type="checkbox" id="hobby" name="Learning">Learning
+        <input type="checkbox" id="hobby" name="Dance">Dance
+        <input type="checkbox" id="hobby" name="Photography">Photography
+        <input type="checkbox" id="hobby" name=" Chess"> Chess
+        <input type="checkbox" id="hobby" name="Playing"> Playing
+        <br><br>
+        <label for="gender">Gender :</label>
+        <input type="radio" name="gender" id="gender" value="male">Male
+        <input type="radio" name="gender" id="gender" value="female">Female
+        <input type="radio" name="gender" id="gender" value="other">Other
+        <br><br>
+        <label for="photo">Upload Profile Picture :</label>
+        <input type="file" id="photo" name="photo">
+        <br><br>
+        <button type="submit" onclick="alert('Your Form Submitted!') ">Submit</button>
+        <button type="reset" onclick="alert('Reset!') ">Reset</button>
+
+
+    </form>
+</body>
+
+
+</html>
